@@ -1,0 +1,51 @@
+[
+ {
+  "id":"first-name",
+   "name":"firstName",
+  "type":"text",
+  "label" : "First Name",
+  "placeholder":"first name",
+  "compulsory":"true"
+ },
+ {
+  "id":"last-name",
+   "name":"lastName",
+  "type":"text",
+  "label" : "Last Name",
+  "placeholder":"Last Name",
+  "compulsory":"true"
+ },
+ {
+  "id":"email",
+   "name":"email",
+  "type":"email",
+  "placeholder":"example@gmail.com",
+  "label" : "Email",
+  "compulsory":"true"
+ },
+ {
+  "id":"password",
+   "name":"password",
+  "type":"password",
+  "placeholder":"",
+  "label" : "Set Password",
+  "compulsory":"true"
+ },
+ {
+  "id":"passwordConfirm",
+   "name": "password",
+  "type":"password",
+  "placeholder":"",
+  "compulsory":"true",
+  "label" : "confirm Password"
+
+ },
+ {
+  "id":"checkbox",
+   "name":"checked",
+  "placeholder":"",
+  "type":"checkbox",
+  "label" : "Do you wish to subscribe to our news letter",
+  "compulsory" : false
+ }
+]
