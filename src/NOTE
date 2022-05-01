@@ -1,0 +1,29 @@
+ const item = JSingnUp.map(items =>{ 
+  return(<WSignUp 
+                  key={item.id}
+                  handleChange={handleChange}
+                  {...items}/>) 
+
+
+
+
+
+
+
+
+
+                  <section className="header-wrapper">
+                  <nav className="nav-wrapper">   
+                             <img src="../logo192.png" alt='' width='100px' />  
+                             <h1>Finamon</h1>
+                    </nav>
+                    <div className="anchor-wrapper">
+                             <p onClick={signUp}>sign up</p>
+                             <p onClick={props.login}>login</p>
+                             <p onClick={props.about}>about</p>
+                  </div>
+                  <footer>
+                    Finamon template
+                    </footer>
+                 
+                   </section>

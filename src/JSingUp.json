@@ -46,6 +46,6 @@
   "placeholder":"",
   "type":"checkbox",
   "label" : "Do you wish to subscribe to our news letter",
-  "compulsory" : false
+  "compulsory" : "false"
  }
 ]

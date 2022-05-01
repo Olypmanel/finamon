@@ -8,7 +8,7 @@ const WSignUp =(props)=> {
 
  return (
  <>
-  <label htmlFor="first-name">{label} </label>
+  <label htmlFor={id}>{label} </label>
   <input 
            onChange={handleChange}
            name={name}

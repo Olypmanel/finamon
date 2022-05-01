@@ -1,23 +1,22 @@
 import React from "react"
 import WSignUp from "./WSignUp"
-import JSingnUp from "./JSingUp.json"
+import signUpData from "./JSingUp.json"
 const Welcome =(props) => {
+  function signUp() {
+    const items = signUpData.map(item => {
+      return (
+         <WSignUp 
+         key={item.id}
+         {...item} 
+         />
+      )})
+    setPage(
+<form>
+  {items}
+  <button>Sign Up</button>
+</form>
+    )}
   
- const [formInput, setFormInput] = React.useState({
-  firstName: "",
-  lastName: "",
-  email : "",
-  checked: false
- })
- function handleChange(event) {
-const { value, name,type, checked} = event.target
-setFormInput(prevState => ({
-           ...prevState,
-           [name] : type === "checkbox" ? checked : value
-}))
- }
-console.log(formInput)
-
   // IGNORE DOWNWARD
   const [page, setPage] = React.useState(
     <section className="header-wrapper">
@@ -36,13 +35,7 @@ console.log(formInput)
   
     </section>
     )
-    // IGNORE UPWARD
-  function signUp() {
-  const item = JSingnUp.map(items => <WSignUp />) // YOU STOP HERE
-  setPage(
-
-
-   )}
+    //
 
  return  page
  
