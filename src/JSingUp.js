@@ -1,11 +1,12 @@
-[
+export default [
  {
   "id":"first-name",
    "name":"firstName",
   "type":"text",
   "label" : "First Name",
   "placeholder":"first name",
-  "compulsory":"true"
+  "required": "true"
+
  },
  {
   "id":"last-name",
@@ -13,7 +14,9 @@
   "type":"text",
   "label" : "Last Name",
   "placeholder":"Last Name",
-  "compulsory":"true"
+  "required": "true"
+  // value : props.lastName
+
  },
  {
   "id":"email",
@@ -21,7 +24,9 @@
   "type":"email",
   "placeholder":"example@gmail.com",
   "label" : "Email",
-  "compulsory":"true"
+  "required": "true"
+  // value : props.email
+
  },
  {
   "id":"password",
@@ -29,15 +34,19 @@
   "type":"password",
   "placeholder":"",
   "label" : "Set Password",
-  "compulsory":"true"
+  "required": "true"
+  // value : props.password
+
  },
  {
   "id":"passwordConfirm",
    "name": "password",
   "type":"password",
   "placeholder":"",
-  "compulsory":"true",
+  "required": "true",
   "label" : "confirm Password"
+  // value : props.password
+
 
  },
  {
@@ -45,7 +54,9 @@
    "name":"checked",
   "placeholder":"",
   "type":"checkbox",
-  "label" : "Do you wish to subscribe to our news letter",
-  "compulsory" : "false"
+  "label" : "Subscribe to our news letter",
+  // "required" : "unrequired"
+  // value : props.checked
  }
 ]
+// export default Data
