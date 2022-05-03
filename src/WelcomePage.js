@@ -1,52 +1,42 @@
 import React from "react"
 import WSignUp from "./WSignUp"
-import signUpData from "./JSingUp"
+import signUpData from "./JSingUp.json"
 import Welcome from "./Welcome"
 import Header from "./Header"
-import "./ZSingnUp.css"
 import './ztyle.css';
+import "./ZSingnUp.css"
 
 
 const WelcomePage =(props) => {
   //STATES STAYS HERE
   const [FormData, setFormData] = React.useState(
- [
 {
-  // id: "firstname",
-  firstName: ""
-},
-{
-  //  id : "lastname",
-  lastName: ""
-} ,
- {
-    // id : "email",
-   email : ""
-  },
+  firstName : "",
+  lastName : "",
+  email: "",
+  password : "",
+  password : "",
+  checked : false
+})
 
-  {
-    // id : "password",
-  password : ""
-}
-  ])
   //FUNCTIONS STAYS HERE
 
   const handleChange = (event)=> {
-  // console.log(FormData)
+  console.log(FormData)
   const {name, value, checked, type} = event.target
-  setFormData( prevState => {
-    // if(name===FormData)
-  return {
-    ...prevState,
-     [name] : type === "checkbox"  ?  checked : value
-  }
-  })
+ setFormData(prevState => ({
+   ...prevState,
+   [name] : type === "checkbox" ? checked : value 
+
+ }))
+  // console.log(FormData)
+
     } 
      const handleSubmit =(event) => {
     event.preventDefault()
-    console.log()
+    console.log(FormData.name)
   }
-  console.log(FormData)
+
   function signUp() {
     const items = signUpData.map(item => {
       return (
@@ -54,7 +44,7 @@ const WelcomePage =(props) => {
          <WSignUp 
          key={item.id}
          {...item} 
-          value={FormData[item]}
+          value={}
          handleChange={ handleChange}
          />
       )})

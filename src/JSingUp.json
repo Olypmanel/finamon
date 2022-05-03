@@ -1,4 +1,4 @@
-export default [
+ [
  {
   "id":"first-name",
    "name":"firstName",
@@ -15,7 +15,6 @@ export default [
   "label" : "Last Name",
   "placeholder":"Last Name",
   "required": "true"
-  // value : props.lastName
 
  },
  {
@@ -25,7 +24,6 @@ export default [
   "placeholder":"example@gmail.com",
   "label" : "Email",
   "required": "true"
-  // value : props.email
 
  },
  {
@@ -35,7 +33,6 @@ export default [
   "placeholder":"",
   "label" : "Set Password",
   "required": "true"
-  // value : props.password
 
  },
  {
@@ -45,7 +42,6 @@ export default [
   "placeholder":"",
   "required": "true",
   "label" : "confirm Password"
-  // value : props.password
 
 
  },
@@ -55,8 +51,6 @@ export default [
   "placeholder":"",
   "type":"checkbox",
   "label" : "Subscribe to our news letter",
-  // "required" : "unrequired"
-  // value : props.checked
+  "required" : "not required"
  }
 ]
-// export default Data
