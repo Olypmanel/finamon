@@ -76,6 +76,8 @@ div.button-par button {
   font-size: 0.8rem;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
+  cursor: pointer;
+  border: solid var(--bg-color) 1px;
 }
 
 div.button-par button:hover, div.button-par button:focus {

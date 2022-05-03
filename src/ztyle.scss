@@ -41,13 +41,13 @@ box-sizing: border-box;
   }
       .anchor-wrapper {
        background: url(../public/art.jpg) center/cover no-repeat;
-       height: 65vh;
+       height: 71vh;
        display: flex;
        margin-bottom: 2vh;
        p {
         align-self: center;
         margin: auto;
-        font-size: 30px;
+        font-size: 1rem;
         font-weight: 900;
         background: var(--bg-color);
         padding: 1rem;
@@ -66,4 +66,14 @@ box-sizing: border-box;
        color:var(--color);
        letter-spacing: 2px;
        box-shadow: var(--box-shadow);
+      }
+      @media(max-width: 500px) {
+        .anchor-wrapper{
+        p{
+              font-size: 1rem;
+          }
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
       }

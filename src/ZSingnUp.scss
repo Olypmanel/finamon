@@ -63,7 +63,8 @@ border-radius: 6px;
 font-weight: 900;
 font-size: 0.8rem;
 box-shadow: var(--box-shadow);
-
+cursor: pointer;
+border:solid var(--bg-color) 1px ;
 &:hover, &:focus {
  background: var(--color);
  color: var(--bg-color);
