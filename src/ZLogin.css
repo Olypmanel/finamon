@@ -1,0 +1,50 @@
+.login-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 5rem auto;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: 6px;
+}
+
+.login-div #login-form {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+}
+
+.login-div #login-form label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.login-div #login-form input {
+  width: 70%;
+  margin: 0.8rem;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.login-div #login-form button {
+  background-color: var(--bg-color);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  letter-spacing: 0.5rem;
+  margin-left: 1rem;
+  font-weight: 900;
+}
+
+.login-div #login-form button:focus, .login-div #login-form button:hover {
+  color: var(--bg-color);
+  background-color: var(--color);
+}
+/*# sourceMappingURL=ZLogin.css.map */
