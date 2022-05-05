@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+#root {
+  position: relative;
+}
+
 .header-wrapper {
   margin: 0;
   margin-top: -5px;
@@ -34,6 +38,9 @@
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   border-radius: 4px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .header-wrapper .nav-wrapper img {
@@ -48,7 +55,6 @@
 }
 
 .header-wrapper .anchor-wrapper {
-  background: url(../public/art.jpg) center/cover no-repeat;
   height: 71vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,4 +94,4 @@ footer, .footer {
     font-size: 1.5rem;
   }
 }
-/*# sourceMappingURL=ztyle.css.map */
+/*# sourceMappingURL=Z_Style.css.map */

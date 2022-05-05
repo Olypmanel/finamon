@@ -1,10 +1,11 @@
 import React from "react"
-import WSignUp from "./WSignUp"
+import SignUp from "./SignUp"
 import Welcome from "./Welcome"
 import Header from "./Header"
-import LoginPage from "./WLogin"
-import './ztyle.css';
-import "./ZSingnUp.css"
+import LoginPage from "./Login"
+import About from "./About"
+import './Z_Style.css';
+import "./Z_SignUp.css"
 
 
 const WelcomePage =(props) => {
@@ -15,11 +16,15 @@ const WelcomePage =(props) => {
   <Welcome 
                   signUp={signUp}
                   logIn = {logIn} 
+                  about ={about}
                   />
                   </section>
    )
-   function signUp (){ setPage(prevState => <WSignUp  />)}
+   function signUp (){ setPage(prevState => <SignUp  />)}
    function logIn (){ setPage(prevState => <LoginPage  />)}
+   function about (){ setPage(prevState => <About  />)}
+
+  
 
       return  page 
   }

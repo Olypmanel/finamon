@@ -10,7 +10,9 @@ box-sizing: border-box;
  margin: 0;
  padding: 0;
 
-
+}
+#root {
+  position: relative;
 }
  .header-wrapper {
      margin: 0;
@@ -27,6 +29,8 @@ box-sizing: border-box;
    background: var(--bg-color);
    box-shadow: var(--box-shadow);
    border-radius: 4px;
+   position: sticky;
+   top: 0;
    img {
     width: 80px;
     // height: auto;
@@ -40,7 +44,7 @@ box-sizing: border-box;
    color: var(--color);
   }
       .anchor-wrapper {
-       background: url(../public/art.jpg) center/cover no-repeat;
+      //  background: url(../public/art.jpg) center/cover no-repeat;
        height: 71vh;
        display: flex;
        margin-bottom: 2vh;
@@ -69,6 +73,7 @@ box-sizing: border-box;
       }
       @media(max-width: 500px) {
         .anchor-wrapper{
+          // height: 10vh;
         p{
               font-size: 1rem;
           }

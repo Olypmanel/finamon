@@ -8,7 +8,8 @@ const WSignUp =()=> {
       email: "",
       password : "",
       passwordConfirm : "",
-      checked : false
+      signNewsLetter : false,
+      sex : ""
     })
     
       //FUNCTIONS STAYS HERE
@@ -84,14 +85,37 @@ const WSignUp =()=> {
   onChange ={handleChange} 
   value = {FormData.passwordConfirm}
   />
-   <label htmlFor="checkbox"> Subscribe to our news letter</label>
+  <fieldset>
+  <legend>state your gender</legend>
+  
     <input 
-  id= "checkbox"
-   name="checked"
+  id= "male"
+   name="sex"
+  type="radio"
+  value="male"
+  onChange ={handleChange} 
+ checked = {FormData.sex==="male"}
+  />
+  <label htmlFor="male">male</label>
+  <input 
+  id= "female"
+   name="sex"
+  type="radio"
+  value="female"
+  onChange ={handleChange} 
+ checked = {FormData.sex==="female"}
+  />
+  <label htmlFor="female">female</label> 
+     </fieldset>
+   <label htmlFor="news-letter"> Subscribe to our news letter</label>
+    <input 
+  id= "news-letter"
+   name="signNewsLetter"
   type="checkbox"
   onChange ={handleChange} 
-  value = {FormData.checked}
+ checked = {FormData.signNewsLetter}
   />
+  
   
   <div className="button-par">
     <button>Sign In</button>

@@ -6,7 +6,36 @@
 form {
  margin-top: 6vh;
  margin-bottom: 5vh;
+fieldset {
+ border: solid var(--bg-color) 1px;
+ border-radius: 6px;
+ box-shadow: var(--box-shadow);
+ width: 70%;
+ margin-left: 7px;
+ legend {
+  color: var(--bg-color);
+  font-size: 1.2rem;
+  margin-left: 0.7rem;
+  text-transform: capitalize;
+  font-weight: 900;
+ }
+ input {
+  width: 1rem;
+   box-shadow: none;
+   display: inline;
+ }
+ label {
+  font-size: 1.3rem;
+  margin-top: 0.5rem; 
+  &::after {
+display: block;
+content: '.';
+margin: -16px 0;
+opacity: 0;
+ }
+ }
 
+}
 }
 input {
  margin: 0.5rem;
