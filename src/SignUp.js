@@ -8,7 +8,7 @@ const WSignUp =()=> {
       email: "",
       password : "",
       passwordConfirm : "",
-      signNewsLetter : false,
+      signNewsLetter : true,
       sex : ""
     })
     
@@ -94,7 +94,7 @@ const WSignUp =()=> {
   type="radio"
   value="male"
   onChange ={handleChange} 
- checked = {FormData.sex==="male"}
+ checked = {FormData.sex === "male"}
   />
   <label htmlFor="male">male</label>
   <input 
@@ -103,7 +103,7 @@ const WSignUp =()=> {
   type="radio"
   value="female"
   onChange ={handleChange} 
- checked = {FormData.sex==="female"}
+ checked = {FormData.sex === "female"}
   />
   <label htmlFor="female">female</label> 
      </fieldset>

@@ -1,6 +1,7 @@
 import React from "react";
 // import Header from "./Header"
 const Welcome =(props)=> {
+
   const bgImage = {background : "url(../art.jpg)  center/cover no-repeat"}
 return (
  <>
