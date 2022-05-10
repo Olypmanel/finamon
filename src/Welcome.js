@@ -1,14 +1,15 @@
 import React from "react";
+import Header from "./Header";
 // import Header from "./Header"
-const Welcome =(props)=> {
+const Welcome =()=> {
 
   const bgImage = {background : "url(../art.jpg)  center/cover no-repeat"}
+
 return (
  <>
+ <Header />
      <div style ={bgImage} className="anchor-wrapper">
-              <p onClick={props.signUp}>sign up</p>
-              <p onClick={props.logIn}>login</p>
-              <p onClick={props.about}>about</p>
+        
    </div>
    <footer>
      Finamon template

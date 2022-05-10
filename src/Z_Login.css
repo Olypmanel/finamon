@@ -20,7 +20,8 @@
 
 .login-div #login-form label {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .login-div #login-form input {
@@ -33,12 +34,12 @@
 
 .login-div #login-form button {
   background-color: var(--bg-color);
-  font-size: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
+  outline: none;
+  border: none;
   border-radius: 6px;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
-  letter-spacing: 0.5rem;
   margin-left: 1rem;
   font-weight: 900;
 }

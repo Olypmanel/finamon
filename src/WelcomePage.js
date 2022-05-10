@@ -1,31 +1,28 @@
 import React from "react"
 import SignUp from "./SignUp"
 import Welcome from "./Welcome"
-import Header from "./Header"
 import LoginPage from "./Login"
 import About from "./About"
 import './Z_Style.css';
 import "./Z_SignUp.css"
+import {BrowserRouter as Router,  Route, Routes} from "react-router-dom"
 
 
 const WelcomePage =(props) => {
 
-  const [page, setPage] = React.useState(
+  return(
  <section className="header-wrapper">
-    <Header />
-  <Welcome 
-                  signUp={signUp}
-                  logIn = {logIn} 
-                  about ={about}
-                  />
-                  </section>
+   <Router>
+   <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="about/*" element={<About />} />
+        <Route path="login/*" element={<LoginPage />} />
+        <Route path="signup/*" element={<SignUp />} />
+
+      </Routes>
+     </Router>
+     </section>
    )
-   function signUp (){ setPage(prevState => <SignUp  />)}
-   function logIn (){ setPage(prevState => <LoginPage  />)}
-   function about (){ setPage(prevState => <About  />)}
-
-  
-
-      return  page 
   }
 export default WelcomePage
+

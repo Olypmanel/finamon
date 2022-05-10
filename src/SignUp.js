@@ -60,7 +60,7 @@ const WSignUp =()=> {
   id= "email"
    name="email"
   type="email"
-  placeholder="example@gmail.com"
+  placeholder="example@mail.com"
   required
   onChange ={handleChange} 
   value = {FormData.email}
